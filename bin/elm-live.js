@@ -36,6 +36,7 @@ program
   .option('-s, --start-page [start-page]', 'Specify a custom HTML file', 'index.html')
 
   // Booleans
+  .option('-L, --follow-symlinks [follow-symlinks]', 'Follow symbolic links when watching files.', false)
   .option('-u, --pushstate [pushstate]', `Forces the index.html or whatever filename you have passed to the --start-page flag to always be served. Must be used when building with ${chalk.cyan.underline('Browser.application')}.`, false)
   .option('-H, --hot [hot]', 'Turn on hot module reloading.', false)
   .option('-o, --open [open]', 'Open in browser when server starts.', false)
